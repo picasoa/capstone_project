@@ -1,0 +1,156 @@
+
+.wrapper {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+.btn {
+	border-radius: 0;
+}
+.modal-content{
+	background: #212121;
+	color: white;
+	font-family:;
+	border-radius: 0; 
+	box-shadow: 0px 5px 10px  #212121;
+	width:100%;
+}
+#close {
+	color: white;
+}
+
+#signin-form {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	min-height:300px;
+	font-size: 1.5em;
+}
+#register-form{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	min-height:300px;
+	font-size: 1.5em;
+}
+ ::placeholder {
+ 	color: grey;
+}
+.modal-body {
+	background: #424242;
+}
+.modal-header {
+	height: 100px;
+	border:0;
+	box-shadow: 0px 5px 10px  black;
+	border: 2px solid #242424;
+	color: white;
+}
+.modal-footer{
+	border:0;
+
+}
+.signin-in {
+	background: #212121;
+	border:0;
+	margin: 0.6em;
+	padding: 0.3em;
+	width: 70%;
+	border-radius: 4px;
+	box-shadow: 0px 5px 10px  #212121;
+	color: white;
+
+}
+.addpost-in {
+	background: #212121;
+	border:0;
+	margin: 0.6em;
+	width: 70%;
+	border-radius: 4px;
+	box-shadow: 0px 5px 10px  #212121;
+	color: white;
+	padding: 0.5em;
+
+}
+
+	textarea {
+		font-size: 1em;
+
+}
+
+
+#addPostform{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	min-height:300px;
+
+}
+.choose {
+	margin: 2.5em;
+	background: #212121;
+	border:0;
+	width: 70%;
+	border-radius: 4px;
+	box-shadow: 0px 5px 10px  #212121;
+	position: relative;
+		padding: 0.3em;
+	
+}
+.choose input {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 2;
+	cursor: pointer;
+}
+.fakein {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+
+}
+
+.fkbtn {
+	width: 100%;
+	border-radius: 4px;
+	background: #212121;
+	z-index: 0;
+	border: 0;
+	color: white;
+	padding: 0.3em;
+
+}
+
+#addpost-fade {
+	position: absolute;
+}
+.edit-in{
+	background: #212121;
+	border:0;
+	margin: 0.6em;
+	padding: 0.3em;
+	width: 70%;
+	border-radius: 4px;
+	box-shadow: 0px 5px 10px  #212121;
+	color: white;
+}
+
+.register-in{
+	background: #212121;
+	border:0;
+	margin: 0.6em;
+	padding: 0.3em;
+	width: 70%;
+	border-radius: 4px;
+	box-shadow: 0px 5px 10px  #212121;
+	color: white;
+
+}

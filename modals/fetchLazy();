@@ -1,0 +1,16 @@
+PDO::FETCH_LAZY (integer)
+Specifies that the fetch method shall return each row as an object with variable names that correspond to the column names returned in the result set. PDO::FETCH_LAZY creates the object variable names as they are accessed. Not valid inside PDOStatement::fetchAll().
+PDO::FETCH_ASSOC (integer)
+Specifies that the fetch method shall return each row as an array indexed by column name as returned in the corresponding result set. If the result set contains multiple columns with the same name, PDO::FETCH_ASSOC returns only a single value per column name.
+PDO::FETCH_NAMED (integer)
+Specifies that the fetch method shall return each row as an array indexed by column name as returned in the corresponding result set. If the result set contains multiple columns with the same name, PDO::FETCH_NAMED returns an array of values per column name.
+PDO::FETCH_NUM (integer)
+Specifies that the fetch method shall return each row as an array indexed by column number as returned in the corresponding result set, starting at column 0.
+PDO::FETCH_BOTH (integer)
+Specifies that the fetch method shall return each row as an array indexed by both column name and number as returned in the corresponding result set, starting at column 0.
+PDO::FETCH_OBJ (integer)
+Specifies that the fetch method shall return each row as an object with property names that correspond to the column names returned in the result set.
+PDO::FETCH_BOUND (integer)
+Specifies that the fetch method shall return TRUE and assign the values of the columns in the result set to the PHP variables to which they were bound with the PDOStatement::bindParam() or PDOStatement::bindColumn() methods.
+PDO::FETCH_COLUMN (integer)
+Specifies that the fetch method shall return only a single requested column from the next row in the result set.

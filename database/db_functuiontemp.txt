@@ -1,0 +1,16 @@
+ function addUser($a,$b,$c,$d,$e,$f,$g,$h,$i){
+    	 	$stmt = $conn->prepare("INSERT INTO users (RegNo, password, Name,email,mobileNo,address, languages,skills,advice)  
+    VALUES (:RegNo, :password, :Name, :email, :mobileNo, :address, :languages, :skills, :advice )");
+    $uregno= $a;
+    $uemail = $b;
+    $usdvice = $c;
+    $uskills = $d;
+    $ulanguages = $e;
+    $uaddress = $f;
+    $umobile = $g;
+    $uname = $h;
+    $upass = $i;
+    $stmt->execute(array(':RegNo' =>$uregno,':password'=>$upass, ':Name'=> $uname, ':mobileNo'=> $umobile,':address'=> $uaddress, ':languages'=> $ulanguages, ':skills'=> $uskills, ':advice'=> $usdvice ,':email'=> $uemail));
+    	echo "value added";
+    	 }
+    	 
