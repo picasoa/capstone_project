@@ -3,7 +3,7 @@ session_start();
 //declaring variables
     $host= "localhost";
     $user ="root";
-    $pass = "fLUdSqyuUxRiiiJu";
+    $pass = "";
     $database = "dversugo";
 
 
@@ -253,13 +253,13 @@ function checkLogin ($a,$b,$c){
       
           $_SESSION["userList"] = $userlist;
 
-          $query5 =$c->prepare("SELECT * FROM registration");
+          // $query5 =$c->prepare("SELECT * FROM registration");
 
-          $query5->execute();
+          // $query5->execute();
 
-          $_SESSION["regList"]=$query5->fetchAll();
+          // $_SESSION["regList"]=$query5->fetchAll();
 
-          header("Location:http://localhost/prototype/adminPage.php");
+          // header("Location:http://localhost/prototype/adminPage.php");
         }  
         
         $_SESSION["proData"]= $okUser;

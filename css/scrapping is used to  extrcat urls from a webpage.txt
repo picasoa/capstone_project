@@ -1,0 +1,11 @@
+scrapping is used to  extrcat urls from a webpage 
+text data piences 
+extra data 
+csv file of  saved data 
+
+steps to start with scrapping 
+
+1. install python 
+2. add the python to environment variable 
+3. open command prommpt and write 'pip install beautifulsoup4'
+4. write your first program 

@@ -11,7 +11,8 @@
         <form id="editProfileForm" method="POST" action="database/db_connect.php" enctype="multipart/form-data"  >
             <input type="hidden" name="form" value="edit">
             <div class="wrapper">
-                <img class="edit-tag"  id="proPic" height="200" width="200">
+                <img class="edit-tag" src="
+images/upload-1118928_960_720.png"  id="proPic" height="200" width="200" style="background:url()">
                 <div class="choose">
                     <input type="file" name="proPic"  id="proPicin" value="<?php echo $_SESSION["proData"]["propic"]; ?>">
                     <div class="fakein" ><button class="fkbtn" >choose an image</button>
@@ -19,7 +20,8 @@
                 </div>
             </div>
             <div class="wrapper">
-                <img class="edit-tag"  id="cvrPic" height="200" width="200">
+                <img class="edit-tag" src="
+images/upload-1118928_960_720.png"  id="cvrPic" height="200" width="200">
                 <div class="choose">
                     <input type="file" name="coverPic" id="cvrPicin" value="<?php echo $_SESSION["proData"]["coverpic"]; ?>">
                     <div class="fakein" ><button class="fkbtn">choose an image</button>

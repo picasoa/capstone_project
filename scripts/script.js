@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    $('svg').click(function(){
+    $('#svg').css({'background':'rgba(0,0,0,0.2)','padding':'8em','transition':'background 2s, padding 1s','z-index':'1'});
+        $('head').append("<style type='text/css'>.header::before{content: 'Different by Nature';font-size: 3.5em;position:absolute;z-index: 2;color: rgba(255,255,255,1);top: 80%;left: 27%;    }.header::after{content:'Simply';font-size:5em;position:absolute;z-index:1;color:rgba(255,255,255,1);bottom: 15%;left: 27%;}</style>");
+    });
+     $('#nav').toggle(()=>{
+    });
+    $('.arrow').click(()=>{
+       $('#nav').toggle(()=>{
+    }); 
+        $('.arrow').css({'transform':'rotate(180deg)'});
+    });
 	$('.jump_headings ul li a').click(function() {
 		var check= $(this).attr('class');
 			$('.jump_headings ul li a').removeClass("active");
@@ -9,7 +20,6 @@ $(document).ready(function() {
         return;
     }
 		 var pos = $id.offset().top;
-    // animated top scrolling
     $('body, html').animate({scrollTop: pos},1500);
 	});
 
@@ -36,7 +46,7 @@ $(document).ready(function() {
 		
 	});
 
-	$("#courses").on('mouseover','.container .column ',function(){
+	$("#courses").on('mouseover','.containe .column ',function(){
 			$(this).addClass('act').siblings().removeClass('act')
 		});
         setTimeOut('slider()',2000);

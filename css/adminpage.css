@@ -1,54 +1,34 @@
 
 html{
-	background: #CFD8DC;
+	background: #cfd8dc;
 	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin:0;
 
+}
+body{
+    margin:0;
 }
 .wrapper {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: start;
-	margin:0;
+	justify-content: flex-start;
+    align-items: flex-start;
 }
-#header {
-	background:#01579B;
-	color: white;
-	width:100%;
-	height:150px;
-	align-items: center;
-	font-size:1.5em;
-	position:fixed;
-	z-index: 2;
-	box-shadow: 0px 1px 20px rgba(0,0,0,1);
-	
-	
-}
-#menhed span{
-	margin:1em;
-}
-#admindetail{
-	margin-left:10px;
-	width: auto;
-	font-size: 0.8em;
-
-}
-#admindetail p{
-	margin:0;
-}
-#actadmin{
-	position: relative;
-	left:55%;
+#hamburger{
+    font-size: 2em;
+    color:white;
 }
 #menu {
-	background: rgba(0,0,0,1);
+	background: #263238;
+    height: 100vh;
 	color:white;
-	width: 20%;
-	min-height: 700px;
-	position:fixed;
-	left:0;
-	top: 150px;
+	width: 5.5%;
 	list-style-type: none;
-	z-index: 2;
+	z-index: 5;
+    box-sizing: border-box;
+    padding: 1em;
+    position: fixed;
+    transition:0.3 ease-out;
 }
 
 input + button {
@@ -60,26 +40,63 @@ input + button {
 	color:white;
 }
 
-
-
+#dashboard{
+    width:95%;
+    height:600px;
+    justify-content: space-around;
+    height: 100vh;
+    align-items:center;
+    position: relative;
+    left:5%;
+}
+#srch-bar{
+    width:100%;
+    padding: 2em 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+#srch-bar div
+{
+    justify-content: space-around;
+    align-items: center;
+}
+#srch-bar div input
+{
+    width: 200px;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border: none;
+    margin:5px;
+    box-shadow: 0px 0px 3px grey;
+}
+#srch-bar div input:focus{
+    outline:none
+}
 #board-list{
-	height: auto;
-	width: 90%;
-	margin:2em 0em 5em 0em;
-	/*border:2px solid black;*/
+	overflow-y: scroll;
+	width: 48%;
+    height: 500px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: white;
+    position:relative;
+     border-bottom: 4px solid #00c853;
+}
+#board-list div{
+    background: #00c853;
+    margin:0px;
+    padding:2em;
+    width: 45.6%;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 3px 1px rgba(0,0,0,0.5);
+}
+#board-list::-webkit-scrollbar {
+display: none;
 }
 
-#dashboard {
-	justify-content: center;
-	align-content: flex-start;
-	width: 100%;
-	position:relative;
-	top: 150px;
-	background: #CFD8DC;
-	height: auto;
-	align-items: start;
-	/*border: 2px solid black;*/
-}
 #add-srch {
 	width:100%;
 }
@@ -108,7 +125,9 @@ input + button {
 
 #menu-list li{
 	width: 100%;
-	margin: 1em;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0.5em 0em;
 	
 }
 #menu-list li a:hover{
@@ -117,8 +136,32 @@ input + button {
 	/*text-shadow: 1px 1px 10px rgba(0,0,0,1);*/
 }
 
+#menu p:hover{
+    color: grey;
+    cursor:pointer;
+}
+
 #menu-list {
 	list-style-type: none;
+    box-sizing: content-box;
+    padding:0px;
+    width: 100%;
+}
+
+#admindetail{
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    font-weight: 700;
+}
+#admindetail p{
+    width:100%;
+    word-break: break-all;
+    margin:0.5em;
 }
 
 .board {
@@ -127,14 +170,14 @@ input + button {
 	width: 300px;
 	color: white;
 	border-radius: 5px;
-	background: grey;
 	margin: 0.5em;
 }
 #propic {
-	height:100px;
-	width:100px;
+	height:50px;
+	width:50px;
 	border-radius: 100%;
 	border: none;
+    margin-left:0.5%;
 }
 
 #PPspan{
@@ -149,46 +192,41 @@ input + button {
 	margin:1em;
 }
 #reglist{
-	margin: 3em 0em 1.5em 0em;
-	width: 90%;
+	width: 48%;
 	border-radius: 10px;
+    background: white;
+    min-height: 500px;
+    border-bottom: 4px solid #00bcd4;
+    position: relative;
+}
+#reglist div h1{
+    background: #00bcd4;
+    width: 41%;
+    margin:0px;
+    padding: 1em;
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 3px 1px rgba(0,0,0,0.5);
 }
 #studentList{
 	width:100%;
-	background: #f9f9f9;
+    box-sizing: border-box;
+    position:relative;
+    margin-top: 48px;
 }
-#studentList2{
-	width:100%;
-	background: #f9f9f9;
-}
-#studentList tr td{
-	padding: 1em;
+#studentList2
+{
+    width: 100%
+    box-sizing: border-box;
+    position:relative;
+    top:22%;
 }
 
 #studentList tr td img{
 	height: 150px;
 	width:100px;
 }
-#add-srch-form {
-	position: relative;
-	left:20%;
-	top:10%;
-	align-items: center;
-	padding: 1.5em;
-
-}
-#add-srch-form input,select,button{
-	padding:0.8em;
-	margin:0.3em;
-	border:0;
-	border-radius: 5px;
-}
-#add-srch-form  button {
-	font-weight: bold;
-}
- #add-srch-form button:hover{
- 	background: grey;
- }
 #adduser{
 	width: 100%;
 	margin-right:0;
@@ -197,17 +235,13 @@ fieldset{
 	width: 45%;
 	display: inline;
 }
-#srch{
-}
-
 .deletebtn{
 	width:100%;
-	padding: 1.5em;
+	padding: 1em;
 	cursor: pointer;
 	border:0;
-	border-radius: 10px;
-	box-shadow: 0px 1px 5px rgba(0,0,0,1);
-	font-weight: bold;
+    background: transparent;
+    outline-color: transparent;
 }
 .deletebtn:hover{
 	background: red;
@@ -216,21 +250,65 @@ fieldset{
 .addbtn:hover{
 	background: green;
 }
-
-.wrapper-center{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin:0;
-
-}
 table {
 		
 	border-collapse: collapse;
+    width: 100%;
+    margin: 0;
 }
+tr{
+    width:100%;
+}
+th,td{
+    border-bottom: 1px solid #ddd;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
 
 th,td {
-	border: 2px solid black;
-	padding: 1em;
 	text-align: center;
+    padding: 0.5em;
+}
+tbody{width:100%;}
+form{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+.searchBy,.searchBy1{
+    -webkit-appearance: none;
+    font-size: 1.5em;
+    margin:0px;
+    border: 0px;
+    padding: 0.5em;
+    width: 250px;
+    box-shadow: 0px 0px 3px grey; 
+    
+}
+.searchBy:focus,.searchBy1:focus{
+    outline:none;
+}
+.searchBy + button, .searchBy1 + button{
+    font-size:1.5em;
+    position:relative;
+    right: 1em;
+    border: 0px;
+    padding: 0.5em 0.7em;
+    text-align: center;
+    box-shadow: 1px 0px 3px grey; 
+
+}
+.searchBy + button{
+    background: #00b8d4;
+}
+.searchBy1 + button{
+    background: #00c853;
+}
+i + span{
+    display: none;
+}
+p .toggle{
+    text-align:center; 
+    font-size:2.5em; 
+    margin:7em 0em 0em 0.2em;
 }

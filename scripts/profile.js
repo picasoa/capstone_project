@@ -7,10 +7,15 @@ $('.bar').click(function(){
     var c=$('.icon').attr('class');
     if(c=="icon menu"){
     $('.search').css({'color':'black'});
+        $('#svg').fadeToggle(200);
+        $('.advice').fadeToggle(200);
+        $('.cover_pic').css({'filter':'blur(0)'});
     }
     else{
     $('.search').css({'color':'white'});
-
+        $('#svg').fadeToggle(200);
+        $('.advice').fadeToggle(200);
+        $('.cover_pic').css({'filter':'blur(8px)'});
     }
     $('#main .menu_box').fadeToggle(200);
 

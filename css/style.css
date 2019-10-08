@@ -11,44 +11,62 @@ body{
 	width: 100%;
 	height: 100%;
 }
+
 .header{
 	position: relative;
 	width: 100%;
-	height: 800px;
+	height: 99vh;
+}
+i{
+    color: dimgray;
+    transition: 0.3s;
+}
+.arrow{
+    font-size: 2em;
+    margin-left: 35%;
+    color:white;
+}
+.arrow:hover{
+	text-shadow:2px 2px 1px black, 5px 0 5px rgba(67, 232, 228,1),0 5px 5px red;
+    color: white;    
 }
 nav{
 	position: absolute;
-	z-index: 2;
-	width: 100%;
-	height: 50px;
+    right:5%;
+	z-index: 1;
+	width: 5%;
+	height: auto;
+    background: rgba(0,0,0,0.5);
+    border-radius:0px 0px 50px 50px;
+    transition: 1s ease-out;
 }
+
 nav ul{
 	display: flex;
-	list-style: none;
-	margin-left: 55%;
-	line-height: 50px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
+    margin:0;
+    list-style: none;
 }
-nav ul li a{
-	color: white;
-	text-decoration: none;
-	padding: 0 20px;
-	font-family: advent-pro, sans-serif;
-	font-weight: 700;
-	font-size: 18px;
-	letter-spacing: 2px;
-	transition: .3s ease;
+nav ul li{
+    margin: 0.3em 0.8em;
+    font-size:1.7em;
+    
 }
-nav ul li a:hover{
-	/*font-weight: 100;*/
-	font-size: 1.5em;
-	text-shadow: 5px 0px 1px black,0 7px 1px rgba(67, 232, 228,.8),0px 14px 1px rgba(255, 0, 0,.8);
+
+nav ul li button i:hover{
+	text-shadow:2px 2px 1px black, 5px 0 5px rgba(67, 232, 228,1),0 5px 5px red;
+    color: white;
+    text-decoration: none;
 }
-a > button:hover {
-font-size: 1em;
-	text-shadow: 5px 0px 1px black,0 7px 1px rgba(67, 232, 228,.8),0px 14px 1px rgba(255, 0, 0,.8);
+button > a :hover {
+    font-size: 1em;
+	text-shadow:;
 	border: none;
+    
 }
-a > button:focus {
+button:focus {
 	outline: 0;
 }
 
@@ -86,12 +104,24 @@ a > button:focus {
 	width: 100%;
 	height: 65px;
 	background: black;
+    box-shadow: inset 0px -2px 5px grey;
+    border-bottom: grey;
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
 }
 .jump_headings ul{
 	list-style: none;
+    width: 100%;
 	display: flex;
-	margin-left: 20%;
-	line-height: 55px;
+    flex-flow: row;
+    align-content: flex-start;
+    justify-content: center;
+    
+     
+}
+.jump_headings ul li{
+    padding: 0.8em;
 }
 .jump_headings ul li a{
 	text-decoration: none;
@@ -99,71 +129,98 @@ a > button:focus {
 	font-weight: bold;
 	font-size: 1.1em;
 	font-family: century gothic;
-	padding: 0 15px;
+	padding: 1em;
 	transition: .3s ease;
 }
+.jump_headings ul li:hover{
+    box-shadow: inset 0px -5px 10px turquoise , inset 5px 0px 5px red,inset -5px 0px 5px turquoise,inset 0px 5px 5px red;
+    transition: 0.3s;
+}
+
 .active{
-	color: rgba(300,300,300,1)!important;
 	text-shadow:2px 2px 1px black, 5px 0 5px rgba(67, 232, 228,.8),0 5px 5px red;
 }
 .jump_headings ul li a:hover{
 	color: rgba(300,300,300,1);
 	text-shadow:2px 2px 1px black, 5px 0 5px rgba(67, 232, 228,.8),0 5px 5px red;
+    letter-spacing: 5px;
+  
 }
 #insight{
 	position: relative;
 	width: 100%;
 	height: auto;
-	background: #171717;
+	background: black;
 	box-sizing: border-box;
 	padding: 100px 0 50px 0;
 }
 #insight .insight_inner_box{
 	position: relative;
-	width: 55%;
+	width: 85%;
 	margin: auto;
 	height: auto;
 	color: white;
 	box-sizing: border-box;
 	padding: 0px 20px;
 	transition: 1s ease;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
-.insight_inner_box .main-heading{
+.main-heading{
+    color: white;
 	font-family: advent-pro, sans-serif;
 	font-weight: bolder;
 	font-size: 2.7em;
+    margin:0px 3em;
 }
-.insight_inner_box .sub-heading{
+.sub-heading{
+    color: white;
 	font-family: century gothic;
 	font-weight: 100;
 	padding-top: 10px;
 	width: 65%;
 	font-size: 1.5em;
+    margin:0px 5.3em;
 }
 .insight_inner_box .box1{
-	width: 100%;
+	width: 70%;
 	background: #7f7f7f;
 	color: black;
 	margin-top: 50px;
-	height: 250px;
+	height: 35vh;
 	box-sizing: border-box;
+    display:flex;
+    flex-flow: row wrap;
+    border-radius: 10px 10px;
+    
+    transition: 0.3s;
 }
+
 .insight_inner_box img{
 	width: 100%;
 	height: 100%;
 }
-.insight_inner_box .box1 .part1{
-	float: left;
+.box1 .part1{
 	width: 45%;
 	height: 100%;
 }
 .box1 .part2 {
 	width: 55%;
-	float: left;
-	box-sizing: border-box;
-	padding: 20px;
+    height:100%;
 	font-family: advent-pro, sans-serif;
+    padding:1em;
+    overflow:hidden;
 }
+
+.insight_inner_box .box1:hover{
+    width: 80%;
+    height:40vh;
+    border-radius:0;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+}
+
 .box1 .part2 h3{
 	margin-bottom: 20px;
 	font-size: 1.8em;
@@ -176,32 +233,39 @@ a > button:focus {
 	padding-right: 20px;
 	box-sizing: border-box; 
 }
+.box1:nth-child(even){
+    position:relative;
+    right: -20%;;
+}
+
+.box1:nth-child(even) .part1{
+    order:2;
+}
+
 #courses{
 	position: relative;
 	width: 100%;
-	height: auto;
-	background: #fff;
+	height: 700px;
 	transition: .3s ease;
 	z-index: -1;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;   
 }
-#courses:hover{
-		background-color: #4e8; 
-		color: white;
-}
-#courses h2{
-	position: relative;
-	text-align: left;
-	position: relative;
-	margin-left: 25%;
-	font-size: 3em;
-}
-#courses .container{
+#courses .containe{
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
+    height:100%;
 }
-
-#courses .container .content{
+#course-head{
+    position: absolute;
+    top:25%;
+    width:100%;
+    z-index: 0;
+    font-size: 15em;
+    opacity: 0.8;  
+}
+#courses .containe .content{
 	width: 25%;
 	height: 300px;
 	float: left;
@@ -209,15 +273,15 @@ a > button:focus {
 	box-sizing: border-box;
 	z-index: 1;
 }
-#courses .container .column:last-child
+#courses .containe .column:last-child
 {
 	border-right: none;
 }
-#courses .container .column .content{
+#courses .containe .column .content{
 	position: relative;
-	height: 300px;
+	height: 350px;
 }
-#courses .container .column .content h1{
+#courses .containe .column .content h1{
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -231,45 +295,45 @@ a > button:focus {
 	font-size: 3em;
 	border-top: 2px solid rgba(0,0,0,.5);
 	border-bottom: 2px solid rgba(0,0,0,.5);
-	height: 300px;
+	height: 100%;
 	line-height: 300px;
 	transition: .3s all;
 }
-#courses .container .column .content .boxx{
+#courses .containe .column .content .boxx{
 	position: absolute;
 	top: 50%;
 	transform: translateY(100%);
 	box-sizing: border-box;
 	padding: 20px;
-	background: rgba(68,278,200,.8);
 	text-align: center;
 	transition: .5s;
 	opacity: 0;
+    z-index: 0;
 
 }
-#courses .container .column.act .content .boxx{
+#courses .containe .column.act .content .boxx{
 	opacity: 1;
 	transform: translateY(-50%);
 }
-#courses .container .column.act .content h1{
+#courses .containe .column.act .content h1{
 	font-size: 0;
-	background: rgba(68,278,200,.8);
+	background: linear-gradient(red,turquoise);
+    opacity: 0.8;
 }
-#courses .container .column .content .boxx h2{
+#courses .containe .column .content .boxx h2{
  	margin: 0;
  	padding: 0;
  	font-size: 2em;
  	color: white;
  }
- #courses .container .column .content .boxx p{
+ #courses .containe .column .content .boxx p{
  
  	font-size: 15px;
  	color: white;
  }
  
- #courses .container .column .bg{
+ #courses .containe .column .bg{
  	position: absolute;
- 	top: 55px;
  	left: 0;
  	width: 100%;
  	height: 100%;
@@ -277,16 +341,16 @@ a > button:focus {
  	z-index: -1;
  	/*filter: blur(2px);*/
  }
- #courses .container .column.act .bg.bg1{
+ #courses .containe .column.act .bg.bg1{
  	background: url(../images/1.jpg);
- 	background-size: cover;
+ 	background-size: contain;
  	/*background-attachment: fixed;*/
  	background-position: center;
  	transition: .5s;
  	filter: blur(2px);
 
  }
-  #courses .container .column.act .bg.bg2{
+  #courses .containe .column.act .bg.bg2{
  	background: url(../images/2.jpg);
  	background-size: cover;
  	/*background-attachment: fixed;*/
@@ -295,7 +359,7 @@ a > button:focus {
  	filter: blur(2px);
  }
 
-  #courses .container .column.act .bg.bg3{
+  #courses .containe .column.act .bg.bg3{
  	background: url(../images/5.jpg);
  	background-size: cover;
  	/*background-attachment: fixed;*/
@@ -304,7 +368,7 @@ a > button:focus {
  	filter: blur(2px);
 
  }
-  #courses .container .column.act .bg.bg4{
+  #courses .containe .column.act .bg.bg4{
  	background: url(../images/1.jpg);
  	background-size: cover;
  	/*background-attachment: fixed;*/
@@ -314,35 +378,45 @@ a > button:focus {
  }
 
 #Happening{
-	position: relative;
 	width: 100%;
 	height: auto;
 	background: black;
-	padding: 50px 0;
-	z-index: -2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0em;
 }
 #Happening .happen-box{
-	position: relative;
-	width: 60%;
+	width: 70%;
 	height: auto;
-	margin: 0 auto;
-	z-index: -2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
 }
 #Happening .happen-box .row ul{
-	position: relative;
+    width: 100%;
 	display: flex;
 	list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.happen-box .row{
+    width: 100%;
 }
 .happen-box .row ul a{
 	text-decoration: none;
 	color: white;
 }
-.happen-box .row ul a img{
-	filter: grayscale(100);
-	transition: .5s all;
+.happen-box .row ul li{
+	transition: .3s;
+    
 }
-.happen-box .row ul a img:hover{
-	filter: grayscale(0);
+.happen-box .row ul li:hover{
+	box-shadow: 5px 0 5px rgba(67, 232, 228,.8),0 5px 5px red;
+    padding: 10px;
 }
 .happen-box .row ul a span{
 	position: relative;
@@ -352,82 +426,84 @@ a > button:focus {
 	font-size: 1.7em;
 	font-weight: bold;
 } 
-.happen-box .row ul li{
-	padding: 10px;
-}
+
 #FTD{
 	font-family: 'engagement';
-	position: relative;
 	width: 100%;
 	height: auto;
 	background: #bbb9b6;
-	padding: 50px 0 100px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
 #FTD .inner{
-	width: 50%;
-	position: relative;
-	margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 80%
 
 }
 #FTD .inner h1{
-	width: 40%;
 	font-size: 3.6em;
-	letter-spacing: 3px;
-	margin: 0 auto;
+    text-align: center;
+    letter-spacing: 5px;
 }
-#FTD .inner .box1,#FTD .inner .box2{
-	margin: 50px auto;
-	position: relative;
-	width: 80%;
-}
-#FTD .inner .box1 h3{
-	font-size: 2em;
-	font-weight: 100;
-	line-height: 40px;
-}
-#FTD .inner .box2 h3{
-	position: relative;
-	float: right;
-	right: 35px;
-	font-size: 2em;
-	font-weight: 100;
-	line-height: 40px;
-}
-#FTD .inner .box1 .img{
-	position: relative;
-	padding: 30px;
-	width: 20%;
-	float: left;
-	height: 180px;
-}
-#FTD .inner .box2 .img{
-	position: relative;
-	padding: 30px;
-	width: 20%;
-	float: right;
-	height: 180px;
+#FTD .inner .box{
+	width: 90%;
+    height: auto;
+    padding: 1em;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    transition: 0.5s ease; 
+    border-radius: 10px;
+    
 }
 
-#FTD .inner .box1 .img img
-,#FTD .inner .box2 .img img{
+#FTD .inner .box:hover{
+    background: black;
+    color:white;
+    box-shadow: inset 0px -10px 30px #bbb9b6; 
+}
+#FTD .inner .box .img{
+	width: 20%;
+    border: 10px solid #bbb9b6;
+}
+#FTD .inner .box h1{
+	font-weight: 100;
+}
+
+
+#FTD .inner .box .img img{
 	width: 100%;
 	height: 100%;
 }
-#FTD .inner .box1 p{
-	font-size:1.8em;
-	padding-top: 50px;
+#FTD .inner .box q{
+    width: 70%;
+	font-size:2em;   
 	font-family: engagement, sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
-#FTD .inner .box2 .para{
-	width: 70%;
-	float: left;
-	font-size:1.8em;
-	padding-top: 100px;
-	font-family: engagement, sans-serif;
-	letter-spacing: 1px;
+.box:nth-child(even) .img{
+    order:2;
 }
-
+.box:nth-child(even) q{
+    order:1;
+}
+.box:nth-child(even) h1{
+    position: relative;
+    right: 30%;
+    order:3;
+}
+.box:nth-child(odd) h1{
+    position: relative;
+    left: 30%;
+    order:3;
+}
 .blogpost{
 	width: 100%;
 	position: relative;
@@ -497,43 +573,51 @@ a > button:focus {
 	font-size: 1.1em;
 }
 #GT{
-	position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 	width: 100%;
-	height: auto;
-	padding-bottom: 100px;
+	height: 600px;
 	background: black;
 	color: #9c9a9c; 
-	text-align: center;
 	font-family: century gothic;
+    padding: 1em;
+}
+#GT h1{
+    width:100%;
+    text-align: center;
+    margin-bottom: 1em;
 }
 #GT .inner{
-	position: relative;
-	margin:0 auto;
-	width: 60%;
-}
-#GT .inner h1{
-	font-size: 3.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    width:80%;
 }
 #GT .inner .box1{
-	margin-top: 200px;
-	float: left;
-	width: 33%;
-	height: auto;
-	line-height: 40px;
+    width:30%;
+    text-align: center;
 }
-#GT .inner .box1 h3{
-	font-size: 2em;
+#GT .inner .box1:nth-child(2)
+{
+    position: relative;
+    right: 1%;
 }
-#GT .inner .box1 h5{
-	color: rgba(300,300,300,.8);
-	font-weight: 400;
-	font-size: 1.1em;
-	margin-top: 10px;
+.gt-icon{
+    height: 100px ;
+    width: 100px;
+    border-radius: 100%;
+    border: 2px solid grey;
+    padding: 0.75em 1em 1em 0.75em;;
+    transition: 0.5s;
 }
-#GT .inner .box1 p{
-	color: #fff;
-	line-height: 20px;
-	font-size: .9em;
+.gt-icon:hover{
+    color: black;
+    background: grey;
+    border: 2px solid black;
+    box-shadow: 0px 0px 200px rgba(255,255,255,01);
 }
 footer{
 	background: white;
