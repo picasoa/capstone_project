@@ -1,0 +1,688 @@
+
+.u6339effect {
+  width: 29px;
+  
+}
+.u6339effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u6339effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u6339effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u6339effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u6339effect a {
+  text-decoration: none !important;
+  width: 29px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 24px;
+  overflow: hidden;
+
+  color: #000000;
+  border: 1px solid #000000;
+}
+.u6339effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFFFFF;
+}
+.u6339effect a:last-child {
+  margin-right: 0px;
+}
+.u6339effect a:before {
+  content: "";
+  display: inline-block;
+  height: 32px;
+  vertical-align: middle;
+}
+.u6339effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u6339effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u6339effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u6339effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 29px;
+  height: 32px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #000000;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u6339effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u6339effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u6339effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+
+.u6340effect {
+  width: 27px;
+  
+}
+.u6340effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u6340effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u6340effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u6340effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u6340effect a {
+  text-decoration: none !important;
+  width: 27px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 24px;
+  overflow: hidden;
+
+  color: #000000;
+  border: 1px solid #000000;
+}
+.u6340effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFFFFF;
+}
+.u6340effect a:last-child {
+  margin-right: 0px;
+}
+.u6340effect a:before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+}
+.u6340effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u6340effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u6340effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u6340effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 30px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #000000;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u6340effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u6340effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u6340effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+
+.u6341effect {
+  width: 27px;
+  
+}
+.u6341effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u6341effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u6341effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u6341effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u6341effect a {
+  text-decoration: none !important;
+  width: 27px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 24px;
+  overflow: hidden;
+
+  color: #000000;
+  border: 1px solid #000000;
+}
+.u6341effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFFFFF;
+}
+.u6341effect a:last-child {
+  margin-right: 0px;
+}
+.u6341effect a:before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+}
+.u6341effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u6341effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u6341effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u6341effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 30px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #000000;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u6341effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u6341effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u6341effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+
+.u6342effect {
+  width: 25px;
+  
+}
+.u6342effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u6342effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u6342effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u6342effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u6342effect a {
+  text-decoration: none !important;
+  width: 25px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 24px;
+  overflow: hidden;
+
+  color: #000000;
+  border: 1px solid #000000;
+}
+.u6342effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFFFFF;
+}
+.u6342effect a:last-child {
+  margin-right: 0px;
+}
+.u6342effect a:before {
+  content: "";
+  display: inline-block;
+  height: 28px;
+  vertical-align: middle;
+}
+.u6342effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u6342effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u6342effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u6342effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 28px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #000000;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u6342effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u6342effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u6342effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+.u6343effect {
+  width: 25px;
+  
+}
+.u6343effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u6343effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u6343effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u6343effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u6343effect a {
+  text-decoration: none !important;
+  width: 25px;
+  height: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 24px;
+  overflow: hidden;
+
+  color: #000000;
+  border: 1px solid #000000;
+}
+.u6343effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFFFFF;
+}
+.u6343effect a:last-child {
+  margin-right: 0px;
+}
+.u6343effect a:before {
+  content: "";
+  display: inline-block;
+  height: 29px;
+  vertical-align: middle;
+}
+.u6343effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u6343effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u6343effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u6343effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 29px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #000000;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u6343effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u6343effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u6343effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+
+
+.u6344effect {
+  width: 27px;
+  
+}
+.u6344effect:nth-child(2) {
+  margin-top: 50px;
+}
+.effect:nth-child(2n+1) {
+
+}
+.u6344effect:nth-child(2n+1) h2 {
+  color: #212121;
+}
+.u6344effect:nth-child(2n) a {
+  color: #fff;
+  border-color: #fff;
+}
+.u6344effect .buttons {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+  /*display: flex; !!!uncomment this line !!!*/
+}
+.u6344effect a {
+  text-decoration: none !important;
+  width: 27px;
+  height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 24px;
+  overflow: hidden;
+
+  color: #000000;
+  border: 1px solid #000000;
+}
+.u6344effect a i {
+  position: relative;
+  z-index: 3;
+  color: #FFFFFF;
+}
+.u6344effect a:last-child {
+  margin-right: 0px;
+}
+.u6344effect a:before {
+  content: "";
+  display: inline-block;
+  height: 31px;
+  vertical-align: middle;
+}
+.u6344effect a i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* lavinia effect */
+.u6344effect.lavinia a {
+  -webkit-transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+  overflow: visible;
+}
+.u6344effect.lavinia a:hover {
+  border-color: rgba(255, 255, 255, 0);
+}
+.u6344effect.lavinia a:after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 31px;
+  top: 0px;
+  left: 0px;
+  border: 1px dashed #000000;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* amiens effect */
+.effect.amiens a {
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}
+.u6344effect.amiens a i {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+.u6344effect.amiens a:hover {
+  -webkit-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  border-color: rgba(33, 33, 33, 0);
+}
+.u6344effect.amiens a:hover i {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  text-shadow: 4px 0px 3px rgba(33, 33, 33, 0.3);
+  -webkit-transition: all 0.2s linear 0.2s;
+  transition: all 0.2s linear 0.2s;
+}

@@ -55,8 +55,10 @@
 			</ul>
 	</div>
 	<div class=" wrap wrapRow" id="section">
-		<div id="sliderBox">
-			<div id='slide' class="wrap wrapRow">
+		
+<div id="sliderBox">
+  
+  <div class="Slide wrap wrapRow">
 				<div class="sliderImgBox">
 					<img class="sliderImg" src="images\pasted image 580x326-crop-u4051.jpg">
 				</div>
@@ -68,8 +70,47 @@
 					</div>
 					<button class="viewPostButton">View Post</button>
 				</div>
+			</div><div class="Slide wrap wrapRow">
+				<div class="sliderImgBox">
+					<img class="sliderImg" src="images\woman-fashion_page_01-crop-u7426.jpg"/>
+				</div>
+				<div class="sliderContentBox wrap wrapCol">
+					<div class=" wrap wrapCol slidePostContent">
+						<h3 class="postType">Illustration</h3>
+						<h1 class="postHeading">NEW FLASH SUIT BEING PAINTED </h1>
+						<p class="postDescription">odio vulputate. Donec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentum. Donec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentumDonec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentum</p>
+					</div>
+					<button class="viewPostButton">View Post</button>
+				</div>
+			</div><div class="Slide wrap wrapRow">
+				<div class="sliderImgBox">
+					<img class="sliderImg" src="images\pasted image 1280x720-crop-u937.jpg">
+				</div>
+				<div class="sliderContentBox wrap wrapCol">
+					<div class=" wrap wrapCol slidePostContent">
+						<h3 class="postType">Illustration</h3>
+						<h1 class="postHeading">NEW FLASH SUIT BEING PAINTED </h1>
+						<p class="postDescription">odio vulputate. Donec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentum. Donec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentumDonec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentum</p>
+					</div>
+					<button class="viewPostButton">View Post</button>
+				</div>
+			</div><div class="Slide wrap wrapRow">
+				<div class="sliderImgBox">
+					<img class="sliderImg" src="images\lfw-ss18-day-1-011-crop-u7374.jpg">
+				</div>
+				<div class="sliderContentBox wrap wrapCol">
+					<div class=" wrap wrapCol slidePostContent">
+						<h3 class="postType">Illustration</h3>
+						<h1 class="postHeading">NEW FLASH SUIT BEING PAINTED </h1>
+						<p class="postDescription">odio vulputate. Donec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentum. Donec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentumDonec non pellentesque ipsum. Nullam eget ultricies leo. Morbi suscipit egestas nibh pharetra condimentum</p>
+					</div>
+					<button class="viewPostButton">View Post</button>
+				</div>
 			</div>
-		</div>
+
+ <center><button class="sliderButton" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="sliderButton" onclick="plusDivs(1)">&#10095;</button></center>
+</div>
 		<div id="posts" class=" wrap wrapCol">
 			<div class="post wrap wrapRow">
 				<img src="images\pasted image 1000x1384-crop-u4282.jpg" class="postImg1">
@@ -157,6 +198,31 @@
 	</div>
 
 </body>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+setInterval(()=>
+			{slideIndex += 1;
+				showDivs(slideIndex);	
+			},5000
+			);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("Slide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "flex";  
+}
+</script>
+
 <script
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
