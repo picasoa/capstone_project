@@ -1178,45 +1178,46 @@ $_SESSION["form"]="index"; ?>
 			</div>
 			
 			<div class="blogpost">
+			<?php require('./database/top_posts.php');?>
 				<h2>This Week's Blog Posts</h2>
 				<div class="inner">
 					<div class="thumbs">
 						<div class="blog1">
 						<div class="img">
-							<img src="images/pasted%20image%201280x720-crop-u925.jpg">
+							<img src="database/images/<?= $posts[0]['image']; ?>">
 						</div>
-						<p>Etiam id mauris condimentum, pellentesque dolor eget, eleifend risus</p>
+						<p><?php echo $posts[0]['heading'];?></p>
 					</div>
 					<div class="blog1">
 						<div class="img">
-							<img src="images/pasted%20image%201280x720-crop-u925.jpg">
+							<img src="database/images/<?= $posts[1]['image']; ?>">
 						</div>
-						<p>Etiam id mauris condimentum, pellentesque dolor eget, eleifend risus</p>
+						<p><?php echo $posts[1]['heading'];?></p>
 					</div>
 					<div class="blog1">
 						<div class="img">
-							<img src="images/pasted%20image%201280x720-crop-u925.jpg">
+							<img src="database/images/<?= $posts[2]['image']; ?>">
 						</div>
-						<p>Etiam id mauris condimentum, pellentesque dolor eget, eleifend risus</p>
+						<p><?php echo $posts[2]['heading'];?></p>
 					</div>
 					<div style="clear: both;"></div>
 					<div class="blog1">
 						<div class="img">
-							<img src="images/pasted%20image%201280x720-crop-u925.jpg">
+							<img src="database/images/<?= $posts[3]['image']; ?>">
 						</div>
-						<p>Etiam id mauris condimentum, pellentesque dolor eget, eleifend risus</p>
+						<p><?php echo $posts[3]['heading'];?></p>
 					</div>
 					<div class="blog1">
 						<div class="img">
-							<img src="images/pasted%20image%201280x720-crop-u925.jpg">
+							<img src="database/images/<?= $posts[4]['image']; ?>">
 						</div>
-						<p>Etiam id mauris condimentum, pellentesque dolor eget, eleifend risus</p>
+						<p><?php echo $posts[4]['heading'];?></p>
 					</div>
 					<div class="blog1">
 						<div class="img">
-							<img src="images/pasted%20image%201280x720-crop-u925.jpg">
+							<img src="database/images/<?= $posts[5]['image']; ?>">
 						</div>
-						<p>Etiam id mauris condimentum, pellentesque dolor eget, eleifend risus</p>
+						<p><?php echo $posts[5]['heading'];?></p>
 					</div>
 					<div style="clear: both;"></div>
 					<center><a style="color: white; text-decoration: none; font-size: 1.2em;" href="#" title="">MORE</a></center>

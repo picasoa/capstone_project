@@ -500,7 +500,7 @@ header("Location:http://localhost/prototype/profile.php");
 
 function registerUser($c){
 	echo "in register user<br>";	
-	$query  = $c->prepare("INSERT INTO REGISTRATION(regNo,name,email,DOB,mobileNo,address) VALUES (:rn,:nm,:em,:db,:mn,:ad)");
+	$query  = $c->prepare("INSERT INTO USERS(RegNo,Name,email,DOB,mobileNo,address) VALUES (:rn,:nm,:em,:db,:mn,:ad)");
 	$query->execute(array(":rn"=>$_POST["regNo"],":nm"=>$_POST["name"],":em"=>$_POST["email"],":db"=>$_POST["DOB"],":mn"=>$_POST["mobileNo"],":ad"=>$_POST["address"]));
 	$_SESSION["indexError"]="Your request has been registered";
 	header("location:http://localhost/prototype/index.php");
